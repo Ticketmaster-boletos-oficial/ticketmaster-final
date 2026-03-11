@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -48,7 +48,7 @@ canvas {
 
         /* --- 2. LOADERS --- */
         #loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255,255,255,0.98); z-index: 15000; display: none; justify-content: center; align-items: center; }
-       #loading-order-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; z-index: 12000; display: none; justify-content: center; align-items: center; flex-direction: column; }
+        #loading-order-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; z-index: 12000; display: none; justify-content: center; align-items: center; flex-direction: column; }
         .spinner { border: 4px solid #f3f3f3; border-top: 4px solid #026cdf; border-radius: 50%; width: 40px; height: 40px; animation: spin 0.8s linear infinite; }
         .order-loading-text { margin-top: 20px; font-size: 16px; font-weight: 600; color: #262626; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
@@ -97,8 +97,8 @@ canvas {
         .cal-weekday { flex: 1; text-align: center; font-size: 13px; color: #555; text-transform: lowercase; }
         .cal-scroll-area { flex: 1; overflow-y: auto; padding-bottom: 80px; }
         .cal-month-block { padding: 20px 10px; }
-        .cal-month-title { text-align: center;
-                           .cal-month-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+        .cal-month-title { text-align: center; font-size: 15px; font-weight: 700; margin-bottom: 15px; text-transform: lowercase; }
+        .cal-month-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
         .cal-day { height: 40px; display: flex; justify-content: center; align-items: center; font-size: 15px; color: #262626; cursor: pointer; position: relative; }
         .cal-day.selected { color: #026cdf; font-weight: 800; }
         .cal-day.selected::after { content: ''; position: absolute; bottom: 5px; width: 20px; height: 3px; background-color: #026cdf; }
@@ -147,8 +147,8 @@ canvas {
         .dt-val { font-size: 22px; font-weight: 800; color: black; }
         
         .dt-warning { font-size: 14px; color: #333; margin-bottom: 30px; line-height: 1.4; font-weight: 400; }
-
-      .dt-gate-black { background: black; color: white; padding: 14px; font-weight: 800; font-size: 18px; text-transform: uppercase; margin-bottom: 25px; width: 100%; display: block; letter-spacing: 1px; }
+        
+        .dt-gate-black { background: black; color: white; padding: 14px; font-weight: 800; font-size: 18px; text-transform: uppercase; margin-bottom: 25px; width: 100%; display: block; letter-spacing: 1px; }
         
         .dt-wallet {
             background: black; color: white; border-radius: 10px; padding: 10px 25px;
@@ -198,7 +198,7 @@ canvas {
 
         .d-main-content { background-color: #f2f2f2; padding: 20px; min-height: 600px; }
         .d-header-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 15px; }
-                           .d-title-group h2 { margin: 0 0 8px 0; font-size: 20px; font-weight: 800; color: #262626; }
+        .d-title-group h2 { margin: 0 0 8px 0; font-size: 20px; font-weight: 800; color: #262626; }
         .d-title-group p { margin: 0; font-size: 12px; color: #666; display: flex; align-items: center; gap: 5px; }
         .d-title-group a { color: #026cdf; text-decoration: underline; }
         
@@ -247,7 +247,7 @@ canvas {
         .mt-tab-content { display: none; flex-direction: column; width: 100%; }
         .mt-tab-content.active-content { display: flex; }
         .mt-section-label { font-size: 12px; font-weight: 800; color: #262626; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0.5px; }
-
+        
         .bts-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; min-height: 220px; margin-bottom: 20px; }
         .bts-info-col { flex: 1.4; padding: 20px; display: flex; flex-direction: column; justify-content: center; }
         .bts-img-col { flex: 1; position: relative; }
@@ -298,7 +298,7 @@ canvas {
         .carousel-scroll-area::-webkit-scrollbar { display: none; }
         .carousel-item-card { flex: 0 0 auto; width: 280px; }
         .city-card { width: 200px; }
-
+        
         .full-black-footer { background-color: #1f262d; width: 100%; padding: 30px 15px 40px 15px; color: white; }
         .footer-brand { font-size: 22px; font-weight: 700; margin-bottom: 25px; }
         .footer-sub { font-size: 14px; margin-bottom: 20px; }
@@ -348,7 +348,7 @@ canvas {
             <div class="tv-option-row">
                 <i class="fa-solid fa-circle-dot tv-radio-icon"></i>
                 <i class="fa-regular fa-envelope tv-email-icon"></i>
-                  <span class="tv-option-text">Email Address</span>
+                <span class="tv-option-text">Email Address</span>
             </div>
 
             <div class="tv-input-group">
@@ -398,7 +398,7 @@ canvas {
                         <p>Estadio GNP Seguros - Ciudad de México</p>
                         <div class="d-share">
                             Comparte que vas a ir 
-                           <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-x-twitter"></i>
                             <i class="fa-regular fa-envelope"></i>
@@ -448,7 +448,7 @@ canvas {
                                 <div class="dt-grid">
                                     <div class="dt-col"><span class="dt-lbl">SECCIÓN</span><span class="dt-val">PL-13A</span></div>
                                     <div class="dt-col"><span class="dt-lbl">FILA</span><span class="dt-val">3</span></div>
-                                       <div class="dt-col"><span class="dt-lbl">ASIENTO(S)</span><span class="dt-val">9</span></div>
+                                    <div class="dt-col"><span class="dt-lbl">ASIENTO(S)</span><span class="dt-val">9</span></div>
                                 </div>
 
                                 <div class="pdf417-wrapper">
@@ -503,8 +503,8 @@ canvas {
                         </div>
                     </div>
                 </div>
-
-              <div style="margin-top: 40px; text-align: center;">
+                
+                <div style="margin-top: 40px; text-align: center;">
                     <button onclick="closeDigitalTickets()" style="background:#026cdf; color:white; border:none; padding:12px 30px; border-radius:4px; font-weight:700; cursor:pointer;">Volver a Mis Boletos</button>
                 </div>
             </div>
@@ -598,7 +598,6 @@ canvas {
                         <div class="bts-title">BTS WORLD TOUR 'ARIRANG' IN MEXICO CITY</div>
                         <div class="bts-date">sáb • 09 de may de 2026 • 08:00 p.m.</div>
                         <div class="bts-venue">Estadio GNP Seguros - Ciudad de México, CDMX</div>
-                        <div class="bts-venue">Estadio GNP Seguros - Ciudad de México, CDMX</div>
                         
                         <button class="bts-btn" onclick="openDigitalTickets()">Ver entradas <i class="fa-solid fa-chevron-right" style="font-size:10px;"></i></button>
                         
@@ -648,8 +647,9 @@ canvas {
             <div class="acc-sub-option">Ver el saldo de la tarjeta de regalo</div>
         </div>
         <div class="acc-menu-item" onclick="toggleSubMenu('submenu-config', 'arrow-config')">
-            <div class="acc-left-group"><i class="fa-solid fa-gear acc-icon"></i><span class="acc-text">Mi Configuración</span></div> <div id="arrow-config" class="thin-arrow"></div>
-            </div>
+            <div class="acc-left-group"><i class="fa-solid fa-gear acc-icon"></i><span class="acc-text">Mi Configuración</span></div>
+            <div id="arrow-config" class="thin-arrow"></div>
+        </div>
         <div id="submenu-config" class="acc-submenu">
             <div class="acc-sub-option">Administrar alertas</div>
             <div class="acc-sub-option">Cambiar preferencias</div>
@@ -687,7 +687,7 @@ canvas {
         <div class="recent-section"><hr class="separator-thin"><div class="thick-black-line"></div><div class="section-title-bold">LAS CIUDADES MAS BUSCADAS</div></div><div class="carousel-wrapper-relative"><div class="carousel-scroll-area"><div class="carousel-item-card city-card"><img src="mexico.jpeg" class="event-img-style"><a class="event-title-link">Ciudad de México</a></div><div class="carousel-item-card city-card"><img src="guadalajara.jpeg" class="event-img-style"><a class="event-title-link">Guadalajara</a></div><div class="carousel-item-card city-card"><img src="monterrey.jpeg" class="event-img-style"><a class="event-title-link">Monterrey</a></div></div></div>
         <div class="recent-section"><hr class="separator-thin"><div class="thick-black-line"></div><div class="section-title-bold">BENEFICIOS</div></div><div class="event-card-container"><img src="aero.jpeg" class="event-img-style"><a class="event-title-link">AeroMexico Rewards</a></div><div class="event-card-container"><img src="banamex.jpeg" class="event-img-style"><a class="event-title-link">Tarjeta de Crédito LineUp Banamex</a></div><div class="event-card-container"><img src="ocesa.jpeg" class="event-img-style"><a class="event-title-link">Experiencias OCESA</a></div><div class="event-card-container"><img src="terminos.jpeg" class="event-img-style"><a class="event-title-link">Términos y Condiciones</a></div>
         <div class="spacer-2cm"></div><div class="full-black-footer"><div class="footer-brand">Ticketmaster®</div><div class="footer-sub">Vamos a Conectarnos</div><div class="social-icons-container"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-x-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-tiktok"></i><i class="fa-solid fa-square-rss"></i><i class="fa-brands fa-spotify"></i><i class="fa-brands fa-linkedin-in"></i></div><div class="app-section-title">Descargue Nuestras Aplicaciones</div><div class="apps-container"><img src="playstore.png" class="app-img"><img src="apple.jpg" class="app-img apple-store-img"></div><div class="legal-main-text">Al continuar en esta página, usted acuerda regirse<br>por nuestros <span class="underline-text">Términos y Condiciones</span>.</div><div class="footer-menu-item"><span>Ayuda</span><i class="fa-solid fa-chevron-down"></i></div><div class="footer-menu-item"><span>Nuestra red</span><i class="fa-solid fa-chevron-down"></i></div><div class="footer-menu-item"><span>Estamos para ayudarte</span><i class="fa-solid fa-chevron-down"></i></div><div class="footer-menu-item"><span>Únete</span><i class="fa-solid fa-chevron-down"></i></div><div class="footer-menu-item"><span>Empresa</span><i class="fa-solid fa-chevron-down"></i></div><div class="footer-bottom-links">Política de Compra | Aviso de Privacidad |<br>Política de Cookies | Compromisos con COFECE |<br>Administrar mis cookies</div><div class="copyright-text">© 1999-2026 Ticketmaster. Todos los derechos reservados.</div></div>
-        </div>
+    </div>
 
     <div id="login-screen">
         <h2 class="login-title">INICIAR SESIÓN</h2>
@@ -798,7 +798,7 @@ canvas {
         }
         
         function finishLogin() {
-          const pwd = document.getElementById('password-input').value;
+            const pwd = document.getElementById('password-input').value;
             // Se valida la contraseña al presionar
             if(pwd.length >= 6) {
                 const email = document.getElementById('user-email-display').innerText;
@@ -848,7 +848,7 @@ canvas {
                 document.getElementById('tab-upcoming').classList.add('active');
                 document.getElementById('content-upcoming').classList.add('active-content');
             } else {
-document.getElementById('tab-past').classList.add('active');
+                document.getElementById('tab-past').classList.add('active');
                 document.getElementById('content-past').classList.add('active-content');
             }
         }
@@ -898,7 +898,7 @@ document.getElementById('tab-past').classList.add('active');
         }
 
         // --- SCROLL DOTS PROTEGIDO ---
-          const slider = document.getElementById('tickets-slider');
+        const slider = document.getElementById('tickets-slider');
         const dots = document.querySelectorAll('.dt-dot');
         if(slider) {
             slider.addEventListener('scroll', () => {
@@ -948,7 +948,7 @@ document.getElementById('tab-past').classList.add('active');
         }
     </script>
     <script>
-      // Función que genera el bloque de puntos real (PDF-417)
+    // Función que genera el bloque de puntos real (PDF-417)
     function renderSafeTix(canvasId, textData) {
         try {
             // Se le suma el tiempo actual para que los puntos se muevan (efecto dinámico)
